@@ -30,4 +30,8 @@ git log --oneline
 git log --oneline -n 2 --since="5 minutes ago"
 ```
 ## Personalized Format: 
-git log --oneline --format="%h %as | >>%n<< %an %ar"
+git log --oneline -n 1 --format="* %h %as | %s %d [%an]"
+
+
+# Check it out
+### Restore First Snapshot: 
