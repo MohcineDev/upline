@@ -35,3 +35,21 @@ git log --oneline -n 1 --format="* %h %as | %s %d [%an]"
 
 # Check it out
 ### Restore First Snapshot: 
+git checkout f719360
+cat hello.sh
+
+### Restore Second Recent Snapshot: 
+git checkout 4f82212
+cat hello.sh
+
+### Return to Latest Version: 
+git checkout master
+
+
+# TAG me
+### Referencing Current Version: 
+git tag v1
+
+### Tagging Previous Version: 
+git tag v1-beta HEAD~1
+
